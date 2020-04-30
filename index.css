@@ -71,8 +71,14 @@ body {
 .page-desc button{
     display: inline;
 }
+.page-desc p{
+    font-size: 18px;
+}
 
 .page-about{
     text-align: center;
     font-family: 'Raleway', sans-serif;
+}
+.page-about p{
+    font-size: 18px;
 }
