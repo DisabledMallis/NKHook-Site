@@ -20,7 +20,11 @@ video{
     position: absolute;
     z-index:1;
     top: 0;
-    text-align: center;  
+    text-align: center;
+    background-color: #0000007F;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
 }
 
 .header h1{
