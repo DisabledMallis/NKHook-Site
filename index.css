@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-color: #212121;
+    background-color: #111111;
     font-family: 'Lato', sans-serif;
 }
 
@@ -26,4 +26,18 @@ body {
 .navbar a:hover, .navbar a:active {
     background-color: #212121;
     border-radius: 6px;
+}
+
+.content{
+    margin-top: 25px;
+    background-color: #212121;
+    box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+}
+.solid-flex h1{
+    font-size: 120px;
+    text-align: center;
+}
+.solid-flex p{
+    font-size: 24px;
+    text-align: center;
 }
