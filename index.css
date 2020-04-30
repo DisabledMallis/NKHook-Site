@@ -1,9 +1,26 @@
 body {
     color: white;
-    background-color: #212121;
     font-family: 'Lato', sans-serif;
-    background-image: url("static/images/code.jpg");
-    background-position-x: -800px;
+    background-color: #121212;
+    box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+}
+
+.video-container{
+    position: relative;
+}
+video{
+    max-width: none;
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: cover;
+    z-index:0;
+    position:relative;
+}
+.video-overlay{
+    position: absolute;
+    z-index:1;
+    top: 0;
+    text-align: center;  
 }
 
 .header h1{
@@ -82,4 +99,8 @@ body {
 }
 .page-about p{
     font-size: 18px;
+}
+
+.bottom-pad{
+    padding-bottom: 25%;
 }

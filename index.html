@@ -36,17 +36,41 @@
             </div>
         </nav>
         <div class="content">
+            <script>
+                window.onload = function() {
+                    var video = document.getElementById('vidcon');
+                    var customMessage = document.getElementById('overlay');
+                    var customMessageTop = video.offsetHeight / 2 - customMessage.offsetHeight / 2;
+                    var customMessageLeft = video.offsetWidth / 2 - customMessage.offsetWidth  / 2;
+                    customMessage.style.left = customMessageLeft + 'px';
+                    customMessage.style.top = customMessageTop + 'px';
+                };
+                window.addEventListener('resize', function() {
+                    var video = document.getElementById('vidcon');
+                    var customMessage = document.getElementById('overlay');
+                    var customMessageTop = video.offsetHeight / 2 - customMessage.offsetHeight / 2;
+                    var customMessageLeft = video.offsetWidth / 2 - customMessage.offsetWidth  / 2;
+                    customMessage.style.left = customMessageLeft + 'px';
+                    customMessage.style.top = customMessageTop + 'px';
+                });
+            </script>
+            <div class="video-container" id="vidcon">
+                <div class="page-head video-overlay" id="overlay">
+                    <h1>NKHook</h1>
+                    <p>Revolutionizing the Bloons Tower Defense modding scene since 2019</p>
+                </div>
+                <video alt="Background Video" src="static/videos/anim.mp4" autoplay="" loop="" muted=""></video>
+            </div>
             <div class="container-fluid page text-center">
                 <div class="jumbotron">
                     <div class="row">
-                        <div class="page-head">
-                            <h1>NKHook</h1>
-                            <p>Revolutionizing the Bloons Tower Defense modding scene since 2019</p>
-                        </div>
                         <div class="page-desc">
                             <h1>Supported Games</h1>
                             <button type="button" class="btn btn-dark" onclick="location.href='bloons5.html'">Bloons TD 5</button>
-                            <!--<button type="button" class="btn btn-dark">Bloons TD 6</button>-->
+                        </div>
+                        <div class="page-about">
+                            <h1>Other games</h1>
+                            <p>We have plans for developing NKHook for Ninja Kiwi's new game, Bloons Tower Defense 6. If you can help, get in touch with us on <a href="https://discord.gg/VADMF2M">Discord</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -55,11 +79,8 @@
                 <h1>About</h1>
                 <p>NKHook is a Bloons Tower Defense modding effort interested in reverse engineering the games at hand to provide a more awesomer experience for modders. You can learn more and help our efforts by joining our <a href="https://discord.gg/VADMF2M">Discord server</a>.</p>
             </div>
-            <div class="page-about">
-                <h1>Other games</h1>
-                <p>We have plans for developing NKHook for Ninja Kiwi's new game, Bloons Tower Defense 6. If you can help, get in touch with us on <a href="https://discord.gg/VADMF2M">Discord</a>.</p>
-            </div>
         </div>
+        <div class="bottom-pad"></div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
