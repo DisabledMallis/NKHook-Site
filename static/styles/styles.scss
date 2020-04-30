@@ -1,0 +1,96 @@
+$accent: white;
+$red: #9F041B;
+$accent: white;
+$background: linear-gradient(50deg, rgba(231, 69, 84, 1) 0%, rgba(200, 66, 123, 1) 40%, rgba(151, 77, 143, 1) 55%, rgba(98, 83, 141, 1) 72%, rgba(58, 81, 119, 1) 91%, rgba(47, 72, 88, 1) 100%);
+$highlight: #334b63;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    height: 100%
+}
+
+::selection {
+    background: $highlight;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $accent;
+    background: $background;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    .navbar-toggler-icon {
+        background-image: url('../images/toggler.svg');
+    }
+    a {
+        text-decoration: none;
+        color: $accent;
+        margin-right: 40px;
+        &:hover,
+        &:active {
+            color: $red;
+        }
+    }
+}
+
+.page {
+    font-size: x-large;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 8px;
+    .bordered-image {
+        border: 5px solid $red;
+    }
+    hr {
+        border-top: 3px solid $accent;
+    }
+    .jumbotron {
+        background-color: transparent;
+        .lead {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: x-large;
+        }
+    }
+    .card {
+        background-color: transparent;
+        border: 2px solid $accent;
+        .card-img-top {}
+        .card-text {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    }
+    .releases {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .download {
+        font-family: 'Raleway', sans-serif;
+        transition: all .2s ease-in;
+        background: $background;
+        border: 2px solid $accent;
+        color: $accent;
+        box-shadow: none;
+        &:hover,
+        &:active {
+            transition: all .3s ease-in;
+            background: $accent;
+            color: $red;
+        }
+    }
+}
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    color: $red;
+    position: absolute;
+    bottom: 0;
+    background-color: $accent;
+}
