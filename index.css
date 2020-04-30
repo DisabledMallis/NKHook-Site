@@ -1,7 +1,9 @@
 body {
     color: white;
-    background-color: #111111;
+    background-color: #212121;
     font-family: 'Lato', sans-serif;
+    background-image: url("static/images/code.jpg");
+    background-position-x: -1600px;
 }
 
 .header h1{
@@ -27,40 +29,46 @@ body {
     background-color: #212121;
     border-radius: 6px;
 }
+.nav-link{
+    display: inline;
+}
 
 .content{
-    margin-top: 25px;
-}
-.solid-flex{
     background-color: #212121;
-    box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+}
+.inline-content{
+    display: flex;
+}
+
+.page-head{
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    flex: 1;
 }
-.solid-flex h1{
-    font-size: 120px;
+.page-head h1{
+    font-size: 80px;
 }
-.solid-flex p{
+.page-head p{
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
 }
 
-.supported-games{
-    background-color: #202020;
-    box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+.page-desc{
+
     text-align: center;
     font-family: 'Raleway', sans-serif;
     padding-bottom: 10px;
+    padding-top: 50px;
     margin-bottom: 10px;
+    flex: 1;
+    float: right;
 }
-.supported-games button{
+.page-desc button{
     display: inline;
 }
 
-.about{
-    background-color: #202020;
-    box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+.page-about{
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
