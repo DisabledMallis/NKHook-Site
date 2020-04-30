@@ -40,6 +40,10 @@ body {
     display: flex;
 }
 
+.jumbotron{
+    background-color: #212121;
+}
+
 .page-head{
     text-align: center;
     padding-bottom: 10px;
