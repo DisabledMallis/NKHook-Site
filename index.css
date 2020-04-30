@@ -78,6 +78,7 @@ body {
 .page-about{
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 15px;
 }
 .page-about p{
     font-size: 18px;
