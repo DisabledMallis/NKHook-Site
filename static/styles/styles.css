@@ -1,108 +1,129 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-html,
 body {
-  height: 100%;
-}
-
-::-moz-selection {
-  background: #334b63;
-}
-
-::selection {
-  background: #334b63;
-}
-
-body {
-  font-family: 'Roboto Condensed', sans-serif;
   color: white;
-  background: linear-gradient(50deg, #e74554 0%, #c8427b 40%, #974d8f 55%, #62538d 72%, #3a5177 91%, #2f4858 100%);
-  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  background-color: #121212;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.video-container {
   position: relative;
-  margin: 0;
-  padding-bottom: 30px;
+}
+
+video {
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  background-color: #0000007F;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 15px;
+}
+
+.header h1 {
+  font-size: 80px;
 }
 
 .navbar {
   font-family: 'Raleway', sans-serif;
+  background-color: #333333;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.75);
 }
 
 .navbar .navbar-toggler-icon {
-  background-image: url("../images/toggler.svg");
+  background-image: url("static/images/toggler.svg");
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  margin-right: 40px;
+  margin-right: 5px;
 }
 
 .navbar a:hover, .navbar a:active {
-  color: #9F041B;
+  background-color: #212121;
+  border-radius: 6px;
 }
 
-.page {
-  font-size: x-large;
+.nav-link {
+  display: inline;
+}
+
+.content {
+  background-color: #212121;
+}
+
+.inline-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jumbotron {
+  background-color: #212121;
+}
+
+.page-head {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.page-head h1 {
+  font-size: 80px;
+}
+
+.page-head p {
+  font-size: 24px;
   font-family: 'Raleway', sans-serif;
-  margin-top: 8px;
 }
 
-.page .bordered-image {
-  border: 5px solid #9F041B;
-}
-
-.page hr {
-  border-top: 3px solid white;
-}
-
-.page .jumbotron {
-  background-color: transparent;
-}
-
-.page .jumbotron .lead {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: x-large;
-}
-
-.page .card {
-  background-color: transparent;
-  border: 2px solid white;
-}
-
-.page .card .card-text {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.page .releases {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.page .download {
+.page-desc {
+  text-align: center;
   font-family: 'Raleway', sans-serif;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  background: linear-gradient(50deg, #e74554 0%, #c8427b 40%, #974d8f 55%, #62538d 72%, #3a5177 91%, #2f4858 100%);
-  border: 2px solid white;
-  color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  margin-bottom: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  float: right;
 }
 
-.page .download:hover, .page .download:active {
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  background: white;
-  color: #9F041B;
+.page-desc button {
+  display: inline;
 }
 
-footer {
+.page-desc p {
+  font-size: 18px;
+}
+
+.page-about {
+  text-align: center;
   font-family: 'Raleway', sans-serif;
-  color: #9F041B;
-  position: absolute;
-  bottom: 0;
-  background-color: white;
+  padding-bottom: 15px;
+}
+
+.page-about p {
+  font-size: 18px;
+}
+
+.bottom-pad {
+  padding-bottom: 25%;
 }
 /*# sourceMappingURL=styles.css.map */
