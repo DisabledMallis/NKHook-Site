@@ -132,6 +132,11 @@ video {
   font-family: 'Raleway', sans-serif;
 }
 
+.download-desc {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
 .download-button {
   font-size: large;
   background-color: #111111;

@@ -15,6 +15,7 @@ $.ajax({
             }
             isLatest = false;
             var releaseName = release["name"];
+            var releaseDesc = release["body"];
             var releaseDownload = release["assets"][0]["browser_download_url"];
             console.log(releaseName);
             console.log(releaseDownload);
@@ -22,6 +23,7 @@ $.ajax({
             $("#download_section").append(`
             <tr>
                 <td class="download-name">${releaseName}</td>
+                <td class="download-desc">${releaseDesc}</td>
                 <td>
                     <a href="${ release["assets"][0]["browser_download_url"]}">
                         <button type="button" class="btn btn-dark download-button">Download</button>
