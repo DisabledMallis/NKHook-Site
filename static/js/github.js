@@ -1,21 +1,34 @@
-$(document).ready(function() {
-    $.ajax({
-        type: "GET",
-        url: `https://api.github.com/repos/Flare-Client/Flare-Client/releases/latest`,
-        crossDomain: true,
-        success: function(result) {
-            $("#github").html(
-                `<p class="releases"><span class="font-weight-bold">${
-          result["name"]
-        }</span> || <span class="font-weight-bold">${result["body"]}</span>
-                <br/>Created at <span class="font-weight-bold">${new Date(
-                  Date.parse(result["created_at"])
-                ).toDateString()}</span></p><a href="${
-          result["assets"][0]["browser_download_url"]
-        }"><button type="button" class="btn download">Download</button></a>`
-            );
+$.ajax({
+    type: "GET",
+    url: `https://api.github.com/repos/TDToolbox/NKHook6/releases`,
+    crossDomain: true,
+    success: function(result) {
+        var isLatest = true;
+        var i = 0;
+        result.forEach(release => {
+            if(isLatest){
+                $("#latest_download").html(`
+                <a href="${ release["assets"][0]["browser_download_url"]}">
+                <button type="button" class="btn btn-dark">Download latest</button>
+                </a>
+                `)
+            }
+            isLatest = false;
+            var releaseName = release["name"];
+            var releaseDownload = release["assets"][0]["browser_download_url"];
+            console.log(releaseName);
+            console.log(releaseDownload);
 
-            return;
-        }
-    });
+            $("#download_section").append(`
+            <tr>
+                <td class="download-name">${releaseName}</td>
+                <td>
+                    <a href="${ release["assets"][0]["browser_download_url"]}">
+                        <button type="button" class="btn btn-dark download-button">Download</button>
+                    </a>
+                </td>
+            </tr>
+            `);
+        });
+    }
 });

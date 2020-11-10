@@ -126,4 +126,14 @@ video {
 .bottom-pad {
   padding-bottom: 25%;
 }
+
+.download-name {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.download-button {
+  font-size: large;
+  background-color: #111111;
+}
 /*# sourceMappingURL=styles.css.map */
