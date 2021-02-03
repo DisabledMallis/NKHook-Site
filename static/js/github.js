@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: `https://api.github.com/repos/TDToolbox/NKHook6/releases`,
+    url: `https://api.github.com/repos/NKHook/NKHook6/releases`,
     crossDomain: true,
     success: function(result) {
         var isLatest = true;
